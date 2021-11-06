@@ -23,7 +23,10 @@ namespace CourseRegistration.Controllers.Data.MockRepo
     };
         public void CreateInstructor(InstructorDto value)
         {
-            throw new NotImplementedException();
+            int newId = _Instructors.Max(x => x.C_courseID) + 1;
+            value.C_courseID = newId;
+
+            _Instructors.Add(value);
         }
 
         public void DeleteInstructor(int id)

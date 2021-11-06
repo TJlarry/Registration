@@ -1,4 +1,5 @@
 ﻿using CourseRegistration.Controllers.Data.Interfaces;
+using CourseRegistration.Models.ModelsDto;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -15,10 +16,21 @@ namespace CourseRegistration.Controllers
         {
             _repo2 = repo2;
         }
-
         public IActionResult Index()
         {
             return View(_repo2.GetAllStudent());
         }
+        [HttpGet]
+        public IActionResult Create()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Create(StudentDto input)
+        {
+            _repo2.CreateStudent(input);
+            return RedirectToAction("Index");
+        }
+
     }
 }

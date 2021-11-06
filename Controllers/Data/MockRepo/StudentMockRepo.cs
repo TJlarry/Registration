@@ -21,7 +21,9 @@ namespace CourseRegistration.Controllers.Data.MockRepo
         };
         public void CreateStudent(StudentDto value)
         {
-            throw new NotImplementedException(); 
+            int newId = _student.Max(k => k.S_studentId) + 1;
+            value.S_studentId = newId;
+            _student.Add(value); 
         }
 
         public void DeleteStudent(int id)

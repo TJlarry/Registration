@@ -404,3 +404,6 @@ C:\Users\HP\source\repos\CourseRegistration\obj\Debug\net5.0\CourseRegistration.
 C:\Users\HP\source\repos\CourseRegistration\obj\Debug\net5.0\Razor\Views\Course\Index.cshtml.g.cs
 C:\Users\HP\source\repos\CourseRegistration\obj\Debug\net5.0\Razor\Views\Instructor\Index.cshtml.g.cs
 C:\Users\HP\source\repos\CourseRegistration\obj\Debug\net5.0\Razor\Views\Student\Index.cshtml.g.cs
+C:\Users\HP\source\repos\CourseRegistration\obj\Debug\net5.0\Razor\Views\Course\Create.cshtml.g.cs
+C:\Users\HP\source\repos\CourseRegistration\obj\Debug\net5.0\Razor\Views\Instructor\Create.cshtml.g.cs
+C:\Users\HP\source\repos\CourseRegistration\obj\Debug\net5.0\Razor\Views\Student\Create.cshtml.g.cs

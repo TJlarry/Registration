@@ -22,7 +22,10 @@ namespace CourseRegistration.Controllers.Data.MockRepo
         };
         public void CreateCourse(CourseDto value)
         {
-            throw new NotImplementedException();
+            int newId = _Courses.Max(x => x.C_courseID) + 1;
+            value.C_courseID = newId;
+
+            _Courses.Add(value);
         }
 
         public void DeleteCourse(int id)

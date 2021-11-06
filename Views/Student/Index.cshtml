@@ -1,0 +1,59 @@
+﻿@model IEnumerable<CourseRegistration.Models.ModelsDto.StudentDto>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.S_studentId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.S_firstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.S_lastName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.S_EmailAddress)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.S_phoneNumber)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.S_studentId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.S_firstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.S_lastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.S_EmailAddress)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.S_phoneNumber)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

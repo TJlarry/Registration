@@ -17,7 +17,7 @@ namespace CourseRegistration.Models.ModelsDto
         [DisplayName(" Email Address")]
         public  string I_emailAddress { get; set; }
         [DisplayName(" Course Identification")]
-        public int C_courseID { get; set; }
+        public int? C_courseID { get; set; }
 
 
        

@@ -21,6 +21,7 @@ namespace CourseRegistration.Controllers
         {
             return View(_repo.GetAllCourses());
         }
+
         [HttpGet]
         public IActionResult Create()
         {
@@ -33,7 +34,23 @@ namespace CourseRegistration.Controllers
             _repo.CreateCourse(input);
             return RedirectToAction("Index");
         }
+        [HttpGet]
+        public IActionResult Update(int id)
+        {
+            
+            return View(_repo.GetCourse(id));
+        }
+        [HttpPost]
+        public IActionResult Update(CourseDto input)
+        {
+            _repo.UpdateCourse(input);
+            return RedirectToAction("Index");
 
 
-    }
+
+        }
+
+
+
+        }
 }

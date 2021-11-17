@@ -31,8 +31,22 @@ namespace CourseRegistration.Controllers
         {
             _repo1.CreateInstructor(input);
             return RedirectToAction("Index");
+
+        }
+        [HttpGet]
+        public IActionResult Update()
+        {
+            return View();
         }
 
+
+
+        [HttpPost]
+        public IActionResult Update(InstructorDto input)
+        {
+            _repo1.UpdateInstructor(input);
+            return RedirectToAction("Index");
+        }
 
 
     }

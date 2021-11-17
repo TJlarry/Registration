@@ -17,12 +17,12 @@ namespace CourseRegistration.Controllers.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder) {
             base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<Course>().HasData(
-            new Course { C_courseID = 001, C_courseNumber = "64745", C_courseName = "Database", C_courseDescription = " DataBase management for beginners" },
-            new Course { C_courseID = 002, C_courseNumber = "64746", C_courseName = "Java Programming", C_courseDescription = "Intoduction to Object Oreineted Programming " },
-            new Course { C_courseID = 003, C_courseNumber = "64747", C_courseName = "C# programming", C_courseDescription = "Introduction to .NET in C# programming" },
-            new Course { C_courseID = 004, C_courseNumber = "64748", C_courseName = "Basic IT", C_courseDescription = " Basic course on Information Tectnology" },
-            new Course { C_courseID = 005, C_courseNumber = "64749", C_courseName = "Software Testing", C_courseDescription = "Basic software testing tool for beginners" },
-            new Course { C_courseID = 006, C_courseNumber = "64750", C_courseName = " HTML5",           C_courseDescription = "HTML5 for begginners" }
+            new Course { C_courseID = 1, C_courseNumber = "64745", C_courseName = "Database", C_courseDescription = " DataBase management for beginners" },
+            new Course { C_courseID = 2, C_courseNumber = "64746", C_courseName = "Java Programming", C_courseDescription = "Intoduction to Object Oreineted Programming " },
+            new Course { C_courseID = 3, C_courseNumber = "64747", C_courseName = "C# programming", C_courseDescription = "Introduction to .NET in C# programming" },
+            new Course { C_courseID = 4, C_courseNumber = "64748", C_courseName = "Basic IT", C_courseDescription = " Basic course on Information Tectnology" },
+            new Course { C_courseID = 5, C_courseNumber = "64749", C_courseName = "Software Testing", C_courseDescription = "Basic software testing tool for beginners" },
+            new Course { C_courseID = 6, C_courseNumber = "64750", C_courseName = " HTML5",           C_courseDescription = "HTML5 for begginners" }
            );
             modelBuilder.Entity<Instructor>().HasData(
             new Instructor { I_instructorID = "7773", I_firstName = "James", I_lastName = "Bonjo", I_emailAddress = "james.B@gmail.com", C_courseID = 001 },

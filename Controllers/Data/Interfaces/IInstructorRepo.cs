@@ -10,7 +10,7 @@ namespace CourseRegistration.Controllers.Data.Interfaces
     {
         void CreateInstructor(InstructorDto value); // create
         IEnumerable<InstructorDto> GetAllInstructor();// read all instructor
-        InstructorDto GetInstructor(int id);
+        InstructorDto GetInstructor(string id);
         void UpdateInstructor(InstructorDto value); // update instructor
         void DeleteInstructor(int id);// delete instructor
 
